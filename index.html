@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DO NOT LOOK BACK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="overlay"></div>
+
+<header>
+  <h1>DO NOT LOOK BACK</h1>
+  <div id="stats">
+    ❤️ <span id="health">100</span>
+    🧠 <span id="sanity">100</span>
+  </div>
+</header>
+
+<main>
+  <img id="scene-image" src="images/forest.jpg" />
+  <div id="text"></div>
+  <div id="choices"></div>
+</main>
+
+<aside id="sidebar">
+  <h2>Inventory</h2>
+  <ul id="inventory"></ul>
+
+  <h2>Map</h2>
+  <div id="map">
+    <button onclick="goTo('forest')">Forest</button>
+    <button onclick="goTo('house')">House</button>
+    <button onclick="goTo('basement')">Basement</button>
+    <button onclick="goTo('road')">Road</button>
+  </div>
+</aside>
+
+<audio id="sfx"></audio>
+<audio id="whispers" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
