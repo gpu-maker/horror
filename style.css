@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background: black;
+  color: #ddd;
+  font-family: monospace;
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  padding: 10px;
+  border-bottom: 1px solid red;
+  z-index: 10;
+}
+
+main {
+  margin-top: 80px;
+  padding: 20px;
+  width: 70%;
+}
+
+#scene-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  filter: contrast(1.1);
+}
+
+#choices button,
+#map button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #111;
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+#choices button:hover {
+  background: red;
+  color: black;
+}
+
+#sidebar {
+  width: 30%;
+  border-left: 1px solid red;
+  padding: 20px;
+}
+
+.low-sanity {
+  animation: glitch 0.15s infinite;
+  color: red;
+}
+
+@keyframes glitch {
+  0% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  100% { transform: translate(1px, 1px); }
+}
+
+#overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: url("images/glitch.png");
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+body {
+  margin: 0;
+  background: black;
+  color: #ddd;
+  font-family: monospace;
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  padding: 10px;
+  border-bottom: 1px solid red;
+  z-index: 10;
+}
+
+main {
+  margin-top: 80px;
+  padding: 20px;
+  width: 70%;
+}
+
+#scene-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  filter: contrast(1.1);
+}
+
+#choices button,
+#map button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #111;
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+#choices button:hover {
+  background: red;
+  color: black;
+}
+
+#sidebar {
+  width: 30%;
+  border-left: 1px solid red;
+  padding: 20px;
+}
+
+.low-sanity {
+  animation: glitch 0.15s infinite;
+  color: red;
+}
+
+@keyframes glitch {
+  0% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  100% { transform: translate(1px, 1px); }
+}
+
+#overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: url("images/glitch.png");
+  opacity: 0;
+  mix-blend-mode: screen;
+}
